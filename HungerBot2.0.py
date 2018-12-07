@@ -38,13 +38,11 @@ for abc in data['response']['groups']:
         c.append(cidade)
     
 
-'''@bot.message_handler(content_types=['location'])
+@bot.message_handler(commands=['start'])
 def inicio(mensagem):
     banner = "Olá! Bateu uma fome? Então ativa sua localização que eu te indico o restaurante mais próximo de você!"
     chatid = mensagem.chat.id # type: 18181818181818 -191919191919
-    print(lati)
-    print(longi)
-    bot.send_message(chatid, banner)'''
+    bot.send_message(chatid, banner)
 
 @bot.message_handler(content_types=['location'])
 def indica(mensagem):
